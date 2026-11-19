@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Rounded Corners and Shadows</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+            background: linear-gradient(135deg, #141e30, #243b55);
+        }
+
+        h1 {
+            color: white;
+            font-size: 35px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+
+        .box {
+            background: linear-gradient(135deg, #ffffff, #dceeff);
+            border-radius: 30px;
+            border: 15px solid transparent;
+
+            border-image: url("https://www.w3.org/TR/css-backgrounds-3/images/border.png") 30 round;
+
+            padding: 40px;
+            margin: 30px auto;
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+
+            transition: 0.4s;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+        }
+
+        .box h2 {
+            color: #243b55;
+        }
+
+        .box p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .gradient-box {
+            background: linear-gradient(45deg, #ff9966, #ff5e62);
+            color: white;
+            padding: 30px;
+            border-radius: 25px;
+            margin-top: 30px;
+            box-shadow: 0 8px 20px #0005;
+        }
+
+        .gradient-box h2 {
+            color: white;
+        }
+
+        footer {
+            color: white;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Rounded Corners, Borders and Shadows</h1>
+
+    <div class="container">
+
+        <div class="box">
+
+            <h2>Rounded Corners</h2>
+
+            <p>
+                CSS border-radius is used to create
+                rounded corners on HTML elements.
+            </p>
+
+            <p>
+                This box has rounded corners,
+                a special border and a shadow effect.
+            </p>
+
+        </div>
+
+        <div class="gradient-box">
+
+            <h2>Background Gradients</h2>
+
+            <p>
+                CSS gradients create beautiful
+                color transitions on web pages.
+            </p>
+
+        </div>
+
+        <div class="box">
+
+            <h2>Box Shadows</h2>
+
+            <p>
+                Box shadows create a 3D effect
+                and make elements look more modern.
+            </p>
+
+            <p>
+                Move your mouse over this box
+                to see the hover animation!
+            </p>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Created with HTML and CSS </p>
+    </footer>
+
+</body>
+</html>
